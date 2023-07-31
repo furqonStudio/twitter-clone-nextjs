@@ -7,16 +7,13 @@ import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <div className="flex m-auto max-w-6xl mt-12 gap-12 ">
-      <div className="fixed  section1  w-2/12">
-        <Sidebar />
-      </div>
-      <div className="space-y-4 ml-64 w-6/12  section2  ">
+    <div className="flex gap-6">
+      <div className="space-y-4">
         <AddPost />
         <Posts />
         {/* */}
       </div>
-      <div className="   section3 w-60">
+      <div className="w-72">
         <Recomendation />
         <Footer />
       </div>

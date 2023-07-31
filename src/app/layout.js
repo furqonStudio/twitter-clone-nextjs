@@ -1,3 +1,4 @@
+import Sidebar from './components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -9,9 +10,16 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const session = false
+
   return (
     <html lang="en" data-theme="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="m-auto max-w-6xl mt-12">
+          <div className="fixed w-60">{session && <Sidebar />}</div>
+          <div className="ml-64">{children}</div>
+        </div>
+      </body>
     </html>
   )
 }

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const PostItem = () => {
   return (
-    <div className="flex gap-3 p-4 border border-slate-700 rounded-lg">
+    <div className="flex gap-3 p-4 border w-[40rem] border-slate-700 rounded-lg">
       <div className="avatar placeholder">
         <div className="bg-neutral-focus text-neutral-content rounded-full w-10 h-10">
           <span className="text-xl">K</span>
